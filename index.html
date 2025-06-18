@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veloo AI - Soluzioni AI Vocali Intelligenti</title>
+    <link rel="stylesheet" href="styles.css?v=1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="nav">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">Veloo AI</span>
+                </div>
+                <button class="contact-btn-nav">Contattaci</button>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="hero-section">
+                <h1 class="hero-title">
+                    Automatizziamo le conversazioni attraverso <span class="highlight">soluzioni AI vocali intelligenti</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Implementa l'AI per gestire migliaia di chiamate con conversazioni simili a quelle umane - in modo consistente, 24/7.
+                </p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary">Contattaci</button>
+                    <button class="btn btn-secondary">Richiedi Demo</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Contact Modal -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Ridefiniamo le conversazioni attraverso l'AI.</h2>
+                    <p>Hai un progetto in mente? Parliamo di come l'AI vocale può trasformare il tuo business.</p>
+                    <button class="close-btn">&times;</button>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Nome</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Mario" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Cognome</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Rossi" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="company">Nome azienda</label>
+                            <input type="text" id="company" name="company" placeholder="La tua azienda">
+                        </div>
+                        <div class="form-group">
+                            <label for="useCase">Caso d'uso</label>
+                            <select id="useCase" name="useCase">
+                                <option value="">Seleziona...</option>
+                                <option value="customer-support">Supporto clienti</option>
+                                <option value="sales">Vendite</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="appointment">Prenotazioni</option>
+                                <option value="survey">Sondaggi</option>
+                                <option value="other">Altro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="email">Email aziendale *</label>
+                        <input type="email" id="email" name="email" placeholder="mario@azienda.com" required>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="phone">Numero di telefono *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+39 123 456 7890" required>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Come possiamo aiutarti? *</label>
+                        <textarea id="message" name="message" placeholder="Descrivi il tuo progetto..." rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Invia richiesta</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="background-elements">
+            <!-- Blue Planet -->
+            <div class="blue-planet"></div>
+            
+            <!-- Floating Particles -->
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            
+            <!-- Gradient Orbs -->
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js?v=1"></script>
+</body>
+</html> 

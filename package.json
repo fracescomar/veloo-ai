@@ -1,0 +1,18 @@
+{
+  "name": "veloo-ai-landing",
+  "version": "1.0.0",
+  "description": "Landing page for Veloo AI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx netlify dev",
+    "build": "echo 'Build complete'",
+    "start": "npx netlify dev"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.4.0",
+    "netlify-cli": "^17.34.1"
+  }
+}
