@@ -1180,11 +1180,12 @@ body {
 /* Zero Change Section */
 .zero-change-section {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
     margin: 4rem 0;
     border-radius: 2rem;
     position: relative;
     overflow: hidden;
+    border: 1px solid rgba(59, 130, 246, 0.1);
 }
 
 .zero-change-section::before {
