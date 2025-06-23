@@ -334,28 +334,10 @@ body {
 }
 
 .highlight-no {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: 900;
-    font-size: 1.3em;
-    display: inline-block;
-    transform: scale(1.2);
-    animation: noGlow 1.2s ease-in-out infinite alternate;
-    position: relative;
-    text-shadow: 0 0 30px rgba(239, 68, 68, 0.8);
-}
-
-@keyframes noGlow {
-    from {
-        filter: drop-shadow(0 0 8px rgba(239, 68, 68, 0.4));
-        transform: scale(1.2);
-    }
-    to {
-        filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.8));
-        transform: scale(1.25);
-    }
+    text-decoration: underline;
+    text-decoration-color: #1a1a1a;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 }
 
 .hero-subtitle {
