@@ -1177,6 +1177,79 @@ body {
     flex-shrink: 0;
 }
 
+/* Zero Change Section */
+.zero-change-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    margin: 4rem 0;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.zero-change-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.zero-change-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.zero-change-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.integration-illustration {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.1));
+}
+
+.module-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    fill: #374151;
+}
+
+.zero-change-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.highlight-zero {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+.zero-change-text p {
+    font-size: 1.2rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
 .cta-section {
     animation: ctaFadeIn 0.8s ease-out 0.6s both;
 }
@@ -1290,6 +1363,32 @@ body {
         width: 100%;
         max-width: 280px;
     }
+    
+    .zero-change-section {
+        margin: 3rem 0;
+        padding: 4rem 0;
+        border-radius: 1.5rem;
+    }
+    
+    .zero-change-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+        padding: 0 1.5rem;
+    }
+    
+    .zero-change-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .zero-change-text p {
+        font-size: 1.1rem;
+    }
+    
+    .integration-illustration {
+        max-width: 280px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1378,5 +1477,29 @@ body {
     .detail-icon {
         font-size: 0.9rem;
         width: 18px;
+    }
+    
+    .zero-change-section {
+        margin: 2rem 0;
+        padding: 3rem 0;
+        border-radius: 1rem;
+    }
+    
+    .zero-change-content {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .zero-change-text h2 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    
+    .zero-change-text p {
+        font-size: 1rem;
+    }
+    
+    .integration-illustration {
+        max-width: 250px;
     }
 } 
