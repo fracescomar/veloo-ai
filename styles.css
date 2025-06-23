@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0 2rem;
     padding-top: 8rem;
 }
@@ -190,9 +190,104 @@ body {
     padding: 0;
     z-index: 10;
     position: relative;
+    min-height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+/* WhatsApp Brand Color */
+.whatsapp-brand {
+    color: #25D366 !important;
+    font-weight: 700;
+}
+
+/* Response Time Section */
+.response-time-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    margin: 4rem 0;
+}
+
+.response-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.response-text h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.highlight-purple {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.response-visual {
+    text-align: center;
+    position: relative;
+}
+
+.big-number {
+    font-size: clamp(8rem, 15vw, 12rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 0.9;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.big-number::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.response-caption {
+    font-size: 1.1rem;
+    color: #6b7280;
+    font-weight: 500;
+    max-width: 250px;
+    margin: 0 auto;
+    line-height: 1.4;
 }
 
 
+
+.hero-section {
+    padding: 3rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+}
 
 .hero-title {
     font-size: clamp(2.2rem, 5vw, 4rem);
@@ -872,13 +967,16 @@ body {
 
 /* WhatsApp Section */
 .whatsapp-section {
-    margin-top: 8rem;
+    margin: 0;
     padding: 6rem 0;
     background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
     border-radius: 2rem;
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(59, 130, 246, 0.1);
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .whatsapp-section::before {
@@ -967,11 +1065,12 @@ body {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
     animation: gridFadeIn 0.8s ease-out 0.4s both;
-    max-width: 1200px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -989,13 +1088,19 @@ body {
 
 .feature-card {
     background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 1.5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1.2rem;
     border: 1px solid rgba(59, 130, 246, 0.1);
     box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 200px;
+    justify-content: center;
 }
 
 .feature-card::before {
@@ -1021,22 +1126,24 @@ body {
 }
 
 .feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     display: block;
 }
 
 .feature-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     color: #1a1a1a;
+    line-height: 1.3;
 }
 
 .feature-card p {
     color: #6b7280;
-    line-height: 1.6;
-    font-size: 1rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .cta-section {
@@ -1060,8 +1167,43 @@ body {
 
 /* Responsive Design for WhatsApp Section */
 @media (max-width: 768px) {
+    .main-content {
+        gap: 2rem;
+        min-height: auto;
+    }
+    
+    .hero-section {
+        min-height: 50vh;
+        padding: 2rem 0;
+    }
+    
+    .response-time-section {
+        margin: 2rem 0;
+        padding: 4rem 0;
+        border-radius: 1.5rem;
+    }
+    
+    .response-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .response-text h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .big-number {
+        font-size: 8rem;
+    }
+    
+    .response-caption {
+        font-size: 1rem;
+    }
+    
     .whatsapp-section {
-        margin-top: 4rem;
+        margin: 0;
         padding: 4rem 0;
         border-radius: 1.5rem;
     }
@@ -1081,12 +1223,15 @@ body {
     
     .features-grid {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         gap: 1.5rem;
         margin-bottom: 2.5rem;
+        max-width: 400px;
     }
     
     .feature-card {
         padding: 2rem 1.5rem;
+        min-height: 180px;
     }
     
     .feature-icon {
@@ -1107,8 +1252,40 @@ body {
 }
 
 @media (max-width: 480px) {
+    .main-content {
+        gap: 1.5rem;
+    }
+    
+    .hero-section {
+        min-height: 40vh;
+        padding: 1.5rem 0;
+    }
+    
+    .response-time-section {
+        margin: 1.5rem 0;
+        padding: 3rem 0;
+    }
+    
+    .response-content {
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+    
+    .response-text h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+    
+    .big-number {
+        font-size: 6rem;
+    }
+    
+    .response-caption {
+        font-size: 0.9rem;
+    }
+    
     .whatsapp-section {
-        margin-top: 3rem;
+        margin: 0;
         padding: 3rem 0;
     }
     
@@ -1124,7 +1301,25 @@ body {
         font-size: 1rem;
     }
     
+    .features-grid {
+        max-width: 350px;
+    }
+    
     .feature-card {
         padding: 1.5rem 1rem;
+        min-height: 160px;
+    }
+    
+    .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .feature-card p {
+        font-size: 0.85rem;
     }
 } 

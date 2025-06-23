@@ -53,7 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 buttonText.includes('demo') || 
                 buttonText.includes('scopri') || 
                 buttonText.includes('parla') || 
-                buttonText.includes('esperto')) {
+                buttonText.includes('esperto') ||
+                buttonText.includes('inizia')) {
                 openModal();
             }
         });
