@@ -967,10 +967,13 @@ body {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
     animation: gridFadeIn 0.8s ease-out 0.4s both;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes gridFadeIn {
