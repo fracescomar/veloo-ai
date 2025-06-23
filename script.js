@@ -49,7 +49,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Handle button actions
             const buttonText = this.textContent.toLowerCase();
             
-            if (buttonText.includes('contatt') || buttonText.includes('demo')) {
+            if (buttonText.includes('contatt') || 
+                buttonText.includes('demo') || 
+                buttonText.includes('scopri') || 
+                buttonText.includes('parla') || 
+                buttonText.includes('esperto')) {
                 openModal();
             }
         });
