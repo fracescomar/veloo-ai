@@ -1867,21 +1867,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     color: #1a1a1a;
-    margin-bottom: 1rem;
-}
-
-.cost-amount {
-    font-size: 2rem;
-    font-weight: 700;
     margin-bottom: 1.5rem;
-}
-
-.comparison-card.secretary .cost-amount {
-    color: #ef4444;
-}
-
-.comparison-card.veloo .cost-amount {
-    color: #10b981;
 }
 
 .card-content {
