@@ -1743,3 +1743,83 @@ body {
         height: 440px;
     }
 } 
+
+/* Video Demo Section */
+.video-demo-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    margin: 4rem 0;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.video-demo-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.video-demo-text {
+    margin-bottom: 3rem;
+}
+
+.video-demo-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.video-demo-text p {
+    font-size: 1.2rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: #000;
+}
+
+.wistia_responsive_padding {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.wistia_embed {
+    border-radius: 1rem;
+}
+
+/* Responsive Video Demo */
+@media (max-width: 768px) {
+    .video-demo-section {
+        padding: 4rem 0;
+        margin: 2rem 0;
+    }
+    
+    .video-demo-content {
+        padding: 0 1rem;
+    }
+    
+    .video-demo-text h2 {
+        font-size: 2rem;
+    }
+    
+    .video-demo-text p {
+        font-size: 1rem;
+    }
+    
+    .video-container {
+        max-width: 100%;
+    }
+} 
